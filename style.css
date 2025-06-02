@@ -222,6 +222,20 @@ strong {
     font-weight: 600;
 }
 
+.emoji {
+    color: initial;
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    display: inline-block;
+    font-style: normal;
+}
+
+h1 .emoji {
+    font-size: 1.1em;
+    margin-right: 0.2rem;
+}
+
 @media (max-width: 900px) {
     main {
         margin: 2rem;
