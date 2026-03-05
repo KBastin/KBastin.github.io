@@ -2,70 +2,326 @@
 <html lang="en">
 
 <head>
-    <title>Kevin's portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Full-stack .NET developer based in Belgium, specializing in C# and clean code" />
-    <meta name="keywords" content="full-stack developer, .NET, C#, Belgium, React, Azure" />
+    <title>Kevin Bastin - Full Stack .NET Developer</title>
+    <meta name="description" content="Full Stack .NET Developer with 8 years of professional experience designing scalable web applications." />
+    <meta name="keywords" content="full-stack developer, .NET, C#, Belgium, React, ASP.NET Core, Azure" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <main>
-        <section>
-            <h1><span class="emoji">👋</span> Hello, I'm Kevin</h1>
-            <p>I'm a <strong>full-stack developer</strong> based in <strong>Belgium</strong>, specializing in
-                <strong>.NET</strong> and <strong>C#</strong>. I love bringing complex ideas to
-                life through clean, reliable code.
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    Kevin Bastin
+                </div>
+                <div class="flex gap-8 hidden md:flex">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-20 sm:py-32">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
+                    Full Stack .NET Developer
+                </h1>
+                <p class="text-xl text-gray-700 mb-4">
+                    8 years designing scalable web applications for finance, healthcare, and B2B sectors
+                </p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="https://github.com/KBastin" target="_blank" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                        GitHub
+                    </a>
+                    <a href="mailto:kbastin.dev@gmail.com" class="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Professional Summary</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Solution-oriented Full Stack .NET Developer with nearly 8 years of experience building robust and maintainable systems. I specialize in designing scalable web applications tailored to real user needs for finance, healthcare, and B2B sectors.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Committed to code quality, I write clean, testable code and actively contribute within Agile teams. Experienced in cloud deployment and DevOps workflows (Azure DevOps, Docker).
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Strong communicator, comfortable collaborating with both technical and non-technical stakeholders to deliver reliable platforms for critical business applications.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Quick Facts</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 font-bold mr-3">📍</span>
+                            <span class="text-gray-700">Belgium</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 font-bold mr-3">💬</span>
+                            <span class="text-gray-700">French (Native), English (B2)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 font-bold mr-3">📧</span>
+                            <span class="text-gray-700"><a href="mailto:kbastin.dev@gmail.com" class="text-blue-600 hover:underline">kbastin.dev@gmail.com</a></span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 font-bold mr-3">🎓</span>
+                            <span class="text-gray-700">Bachelor's in Business Computing (2013)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 sm:py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Backend -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">Backend (.NET)</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• C#</li>
+                        <li>• .NET 4.5 – 10</li>
+                        <li>• ASP.NET Core</li>
+                        <li>• Web API & REST</li>
+                        <li>• Razor Pages & MVC</li>
+                        <li>• Entity Framework Core</li>
+                        <li>• LINQ</li>
+                        <li>• Blazor</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4 text-purple-600">Frontend</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• React</li>
+                        <li>• HTML & CSS</li>
+                        <li>• JavaScript</li>
+                        <li>• jQuery</li>
+                        <li>• Responsive Design</li>
+                        <li>• Bootstrap</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• LESS</li>
+                    </ul>
+                </div>
+
+                <!-- Databases & Tools -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4 text-pink-600">Databases & DevOps</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• MS-SQL & SQL Server Management Studio</li>
+                        <li>• NoSQL Databases</li>
+                        <li>• Oracle DB</li>
+                        <li>• Docker & Docker Compose</li>
+                        <li>• Azure DevOps</li>
+                        <li>• Git & Version Control</li>
+                        <li>• Jenkins</li>
+                        <li>• Linux/GNU Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Testing & Architecture -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">Testing & Code Quality</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• xUnit</li>
+                        <li>• NUnit</li>
+                        <li>• Moq</li>
+                        <li>• SOLID Principles</li>
+                        <li>• Clean Code</li>
+                        <li>• Unit Testing</li>
+                        <li>• Test-Driven Development</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4 text-purple-600">Tools & Platforms</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Visual Studio 2026 & 2022</li>
+                        <li>• VS Code</li>
+                        <li>• Jira</li>
+                        <li>• Confluence</li>
+                        <li>• ReSharper</li>
+                        <li>• Dotnet CLI</li>
+                        <li>• Salesforce</li>
+                    </ul>
+                </div>
+
+                <!-- Methodologies -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-4 text-pink-600">Methodologies</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Agile & Scrum</li>
+                        <li>• Microservices</li>
+                        <li>• REST & SOAP APIs</li>
+                        <li>• JSON & XML</li>
+                        <li>• Cloud Deployment</li>
+                        <li>• DevOps Workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Professional Experience</h2>
+            <div class="space-y-8">
+                <!-- Corilus -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-blue-600">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+                        <h3 class="text-2xl font-bold text-gray-900">Full Stack Developer @ Corilus</h3>
+                        <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded">12/2024 – 09/2024</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">Medical synchronization system development and enhancement</p>
+                    <ul class="space-y-2 text-gray-700 mb-4">
+                        <li>• Developed a service to synchronize a local resident database with centralized cloud system</li>
+                        <li>• Introduced unit tests in previously untested codebase, improving reliability and coverage</li>
+                        <li>• Fixed critical bugs and contributed to system's technical stability</li>
+                        <li>• Integrated Radzen DataGrid on Blazor page for displaying synchronization results (sorting/filtering/pagination)</li>
+                    </ul>
+                    <p class="text-sm text-gray-600"><strong>Stack:</strong> Visual Studio 2022, .NET Framework 4.8, .NET 8, C#, ASP.NET Web API, xUnit, Blazor</p>
+                </div>
+
+                <!-- Bingoal -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+                        <h3 class="text-2xl font-bold text-gray-900">Full Stack Developer @ Bingoal</h3>
+                        <span class="text-sm font-semibold text-purple-600 bg-purple-100 px-3 py-1 rounded">08/2023 – 05/2024</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">Technical transition from legacy system to modern .NET services</p>
+                    <ul class="space-y-2 text-gray-700 mb-4">
+                        <li>• Maintained and improved front-end of bingoal.nl built on internal JavaScript framework</li>
+                        <li>• Developed new RESTful services with ASP.NET Web API to replace legacy APIs</li>
+                        <li>• Wrote unit tests with NUnit to ensure code reliability and maintainability</li>
+                        <li>• Participated in projects related to online betting and gaming systems</li>
+                    </ul>
+                    <p class="text-sm text-gray-600"><strong>Stack:</strong> Visual Studio 2022, .NET 6, C#, ASP.NET Web API, JavaScript, NUnit</p>
+                </div>
+
+                <!-- Career Break -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-pink-600">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+                        <h3 class="text-2xl font-bold text-gray-900">Career & Personal Projects</h3>
+                        <span class="text-sm font-semibold text-pink-600 bg-pink-100 px-3 py-1 rounded">2021 – 2023</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">Developed experimental web and Unity tools, explored new technical approaches</p>
+                    <p class="text-sm text-gray-600"><strong>Stack:</strong> Unity, Blender, ASP.NET Razor Pages, .NET Core 3.1, .NET 5.0, .NET 6.0</p>
+                </div>
+
+                <!-- Borealis Digital Studio -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-blue-600">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+                        <h3 class="text-2xl font-bold text-gray-900">Senior Front-end Developer @ Borealis Digital Studio</h3>
+                        <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded">05/2018 – 09/2020</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">First in-house developer, establishing technical foundations and workflows</p>
+                    <ul class="space-y-2 text-gray-700 mb-4">
+                        <li>• Set up Jenkins pipelines for automating builds and deployments</li>
+                        <li>• Developed and maintained MyBorealis B2B portal built on React, integrated with Salesforce and Cloudcraze APIs</li>
+                        <li>• Collaborated with product owners to estimate, analyze, and deliver user-oriented features</li>
+                        <li>• Supported transition from external team to fully in-house development team</li>
+                    </ul>
+                    <p class="text-sm text-gray-600"><strong>Stack:</strong> VS Code, JavaScript (ES6+), React, Bootstrap, LESS, Salesforce, Scrum</p>
+                </div>
+
+                <!-- Emakina -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-purple-600">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+                        <h3 class="text-2xl font-bold text-gray-900">Full Stack Developer @ Emakina</h3>
+                        <span class="text-sm font-semibold text-purple-600 bg-purple-100 px-3 py-1 rounded">09/2017 – 04/2018</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">Various client-oriented web projects in technical team</p>
+                    <ul class="space-y-2 text-gray-700 mb-4">
+                        <li>• Developed facial recognition system for adult content site, replacing traditional age verification</li>
+                        <li>• Maintained and improved existing websites for various clients</li>
+                        <li>• Designed and developed leasing site integrating business rules and pricing models</li>
+                    </ul>
+                    <p class="text-sm text-gray-600"><strong>Stack:</strong> Visual Studio 2017, C#, jQuery, CSS, Bootstrap</p>
+                </div>
+
+                <!-- Nexios IT -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-pink-600">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+                        <h3 class="text-2xl font-bold text-gray-900">.NET Consultant @ Nexios IT</h3>
+                        <span class="text-sm font-semibold text-pink-600 bg-pink-100 px-3 py-1 rounded">09/2013 – 09/2017</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">Consultant assigned to multiple high-value client projects in finance and enterprise sectors</p>
+                    <ul class="space-y-2 text-gray-700 mb-2">
+                        <li><strong>BNP Paribas Fortis:</strong> Internal user access rights management tool (BNP Security Manager), user import, permission assignment, and synchronization</li>
+                        <li><strong>Industeel Belgium:</strong> Maintained B2B platform, developed composite steel plate ordering feature, created KPI dashboard in Angular</li>
+                        <li><strong>Soprabanking:</strong> Customized Loan Origination software to adapt workflows and business rules to client needs</li>
+                        <li><strong>INAMI/RSVZ:</strong> Maintained WPF application (Sequoia) for managing freelancer and business statuses in Belgium</li>
+                    </ul>
+                    <p class="text-sm text-gray-600 mt-4"><strong>Stack:</strong> C#, VB.NET, Visual Studio, Oracle DB, WCF, WPF, MVC, Web API, AngularJS, jQuery, ReSharper</p>
+                </div>
+
+                <!-- Microsoft Innovation Center -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border-l-4 border-blue-600">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-2">
+                        <h3 class="text-2xl font-bold text-gray-900">Intern @ Microsoft Innovation Center & Groupe Rossel</h3>
+                        <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded">01/2013 – 06/2013</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">Intensive, selective program focused on Microsoft technologies</p>
+                    <ul class="space-y-2 text-gray-700 mb-4">
+                        <li>• Developed two Windows 8 applications for Groupe Rossel (Sudpresse and Le Soir), published on Windows Store</li>
+                        <li>• Applied Agile practices in dynamic environment combining workshops, coaching, and deliverables</li>
+                    </ul>
+                    <p class="text-sm text-gray-600"><strong>Stack:</strong> Visual Studio 2012, C#, XAML, jQuery, .NET Framework 4.5, Scrum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-gradient-to-br from-blue-600 to-purple-600 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Interested in working together or have a project to discuss?
             </p>
-            <p>While my main expertise lies in the <strong>.NET ecosystem</strong>, I’m always open to exploring other
-                technologies and
-                adapting to the needs of the team or the product. I'm driven by <strong>learning</strong>,
-                <strong>building</strong>, and <strong>delivering</strong>.
-            </p>
-        </section>
-        <section>
-            <h1><span class="emoji">🔧</span> Tech Stack</h1>
-            <ul>
-                <li><strong>Primary stack:</strong> ASP.NET Core, C#, Entity Framework Core</li>
-                <li><strong>Frontend:</strong> React</li>
-                <li><strong>Databases:</strong> SQLite, PostgreSQL</li>
-                <li><strong>Tools:</strong> Git, Azure DevOPS, Visual Studio 2022, VS Code</li>
-                <li><strong>Practices:</strong> SOLID principles, REST APIs, Microservices, Unit Testing</li>
-            </ul>
-        </section>
-        <section>
-            <h1><span class="emoji">💼</span> What I'm Looking For</h1>
-            <p>I'm actively seeking a <strong>full-time developer role</strong> (remote or hybrid). My goal is to join a
-                team where I can
-                bring immediate value with <strong>.NET</strong>, while staying open to new stacks, challenges, and ways
-                of thinking.</p>
-        </section>
-        <section>
-            <h1><span class="emoji">✅</span> How I Like to Work</h1>
-            <p>I thrive in teams that follow <strong>Agile methodologies</strong>, especially <strong>Scrum</strong>
-                with regular sprints, planning, and
-                retrospectives. I strongly value:</p>
-            <ul>
-                <li>A clean <strong>Git workflow</strong> with branches, pull requests, and meaningful commit history
-                </li>
-                <li>Clear, well-defined tickets with proper <strong>Definition of Ready</strong> and <strong>Definition
-                        of Done</strong></li>
-                <li>Open communication, structured collaboration, and mutual respect between team members</li>
-                <li>A balance between delivering features and maintaining <strong>code quality</strong> over time</li>
-            </ul>
-            <p>I'm convinced that good process creates good products. Having shared standards, clear goals, and
-                accountability helps everyone move faster — and with fewer bugs.</p>
-        </section>
-        <section>
-            <h1><span class="emoji">📫</span> Contact</h1>
-            <ul>
-                <li><span class="emoji">✉️</span> <strong>Email:</strong> kbastin.dev@gmail.com</li>
-                <li><span class="emoji">📍</span> <strong>Location:</strong> Belgium</li>
-                <li><span class="emoji">✅</span> <strong>Status:</strong> Open to remote or local opportunities</li>
-            </ul>
-        </section>
-    </main>
+            <div class="flex justify-center gap-6 flex-wrap mb-8">
+                <a href="mailto:kbastin.dev@gmail.com" class="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105">
+                    📧 Email Me
+                </a>
+                <a href="https://github.com/KBastin" target="_blank" class="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition transform hover:scale-105">
+                    🔗 GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2026 Kevin Bastin. Full Stack .NET Developer.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
